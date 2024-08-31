@@ -10,3 +10,6 @@
   font-family: "HeadLine";
   src: url("./fonts/IstokWeb-Regular.ttf"), format("truetype");
 }
+.Headline {
+  font-family: "HeadLine";
+}

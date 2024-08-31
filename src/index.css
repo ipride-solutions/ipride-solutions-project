@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-::-webkit-scrollbar{
-    width: 0px;
+::-webkit-scrollbar {
+  width: 0px;
 }
 
 @font-face {
-    font-family: "HeadLine";
-    src: url("./fonts/IstokWeb-Regular.ttf"),format("truetype");
+  font-family: "HeadLine";
+  src: url("./fonts/IstokWeb-Regular.ttf"), format("truetype");
 }
-.Headline{
-    font-family: "HeadLine";
+.Headline {
+  font-family: "HeadLine";
 }

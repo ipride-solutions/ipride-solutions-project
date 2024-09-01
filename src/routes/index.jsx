@@ -1,6 +1,13 @@
 /* eslint-disable react/no-unknown-property */
 import { createFileRoute } from "@tanstack/react-router";
-import { BgSectionHomeDesk, BgSectionHomeMob } from "../utils";
+import {
+  ArrowImg,
+  BgSectionHomeDesk,
+  BgSectionHomeMob,
+  HeroSectionImg,
+  HeroSectionRating,
+  HeroSectionVideoWatch,
+} from "../utils";
 import Navbar from "../components/Navbar";
 import { dropdown, services } from "../constants";
 import { useState } from "react";
@@ -29,11 +36,10 @@ function Index() {
   }, [activeIndex]);
 
   const handleToggle = (index) => {
-    // If the same index is clicked, toggle it off (close it)
     if (activeIndex === index) {
       setActiveIndex(null);
     } else {
-      setActiveIndex(index); // Otherwise, set the clicked index as active
+      setActiveIndex(index);
     }
   };
 
@@ -44,16 +50,49 @@ function Index() {
           <img src={BgSectionHomeMob} className="w-full h-full   " />
         </div>
         <div className="w-full -z-10 h-full absolute hidden sm:block">
-          <img
-            src={BgSectionHomeDesk}
-            className="w-full h-full object-contain   "
-          />
+          <img src={BgSectionHomeDesk} className="w-full h-full object-cover" />
         </div>
         <Navbar />
-        <div className="w-screen h-2/3   flex justify-center ">
-          <div className="w-5/6  h-full font-bold text-[3.4rem] text-white">
-            High quality <br /> IT-Solutions for help your problems about
-            technology
+        <div className="w-screen h-2/3 sm:h-3/4 flex justify-center sm:justify-center ">
+          <div className="w-5/6 sm:w-full sm:pl-10 gap-2 h-full  flex sm:justify-between ">
+            <div className="w-full sm:w-1/2   h-full   font-bold text-[3.4rem] sm:text-[4rem]    text-white">
+              <div className="">
+                High quality <br /> IT-Solutions to help your problems about
+                technology
+              </div>
+              <div className="hidden sm:flex text-lg font-normal w-full h-1/4 text-justify ">
+                We provide expert advice and support for all your IT needs,
+                ensuring that your technology works seamlessly and efficiently.
+                Whether you&apos;re facing technical challenges or looking to
+                optimize your IT infrastructure, our high-quality solutions are
+                tailored to meet your specific requirements.
+              </div>
+            </div>
+            <div className="hidden sm:flex w-1/6 flex-col justify-evenly  h-full">
+              <a className="w-full" href="">
+                <img
+                  src={HeroSectionRating}
+                  className="w-full  pointer-events-none object-contain"
+                />
+              </a>
+              <a href="/" className="w-full">
+                <img
+                  src={HeroSectionVideoWatch}
+                  className="w-full hover:scale-105 transition-all   object-contain"
+                />
+              </a>
+
+              <img
+                src={ArrowImg}
+                className="w-full pointer-events-none  object-contain"
+              />
+            </div>
+            <div className="w-full sm:w-1/3 hidden  justify-end  sm:flex h-full ">
+              <img
+                src={HeroSectionImg}
+                className="w-full h-full object-contain"
+              />
+            </div>
           </div>
         </div>
         <div className="w-screen flex justify-center   h-1/6  ">
@@ -169,6 +208,7 @@ function Index() {
           </div>
         </div>
       </section>
+      {/* Second Section */}
       <section className="w-screen px-5 mb-8">
         <div className="flex flex-col mb-5">
           <h1 className="flex justify-center items-center text-lg text-[#624DE7] font-semibold my-2">

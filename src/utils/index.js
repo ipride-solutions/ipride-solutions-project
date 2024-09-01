@@ -3,9 +3,16 @@ const bg2 = "../src/assets/MobView.png";
 const logo = "../src/assets/PrideLogo.svg";
 const menu = "../src/assets/menu.svg";
 const cross = "../src/assets/close.svg";
-
+const img1 = "../src/assets/IMG.svg";
+const img2 = "../src/assets/Rating.svg";
+const img3 = "../src/assets/Watch Video.svg";
+const img4 = "../src/assets/Arrow.svg";
 export const BgSectionHomeDesk = bg1;
 export const BgSectionHomeMob = bg2;
 export const ComLogo = logo;
 export const menuClosed = menu;
 export const menuOpen = cross;
+export const HeroSectionImg = img1;
+export const HeroSectionRating = img2;
+export const HeroSectionVideoWatch = img3;
+export const ArrowImg = img4;

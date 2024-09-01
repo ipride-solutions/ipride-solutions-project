@@ -5,6 +5,7 @@ import {
   ArrowImg,
   BgSectionHomeDesk,
   BgSectionHomeMob,
+  FormBG,
   HeroSectionImg,
   HeroSectionRating,
   HeroSectionVideoWatch,
@@ -69,7 +70,7 @@ function Index() {
   };
 
   return (
-    <main className="w-screen">
+    <main className="w-screen Headline">
       <section id="Home" className="w-screen h-screen ">
         <div className="w-full -z-10 h-full absolute md:hidden">
           <img src={BgSectionHomeMob} className="w-full h-full   " />
@@ -266,7 +267,7 @@ function Index() {
       {/* Why Us Section */}
       <section className="w-screen px-5 md:flex">
         <div className="w-full md:w-[45vw] mr-8">
-          <div className="flex flex-col">
+          <div className="flex flex-col py-5">
             <h1 className="flex justify-center items-center text-lg text-[#624DE7] font-semibold mb-2">
               Why Us
             </h1>
@@ -278,7 +279,7 @@ function Index() {
               with a focus on innovation, quality, and customer satisfaction.
             </p>
           </div>
-          <div className="px-5 md:px-12 mt-3">
+          <div className="px-5 md:px-12 mt-3 pb-5">
             {dropdown.map((el, idx) => (
               <div key={idx} className="mb-2">
                 <h1
@@ -308,7 +309,10 @@ function Index() {
         </div>
       </section>
 
-      <section className="bg-blue-900 text-white pt-16">
+      <section
+        id="Form"
+        className=" bg-[#4733C9] w-screen  border border-black text-white pt-12 "
+      >
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6 md:px-10  h-full">
           <div className="bg-stone-100 text-gray-900 p-8 lg:rounded-b-none rounded-md shadow-lg w-full md:w-1/2 mb-8 md:mb-0">
             <h2 className="text-2xl font-bold mb-3">Contact us</h2>
@@ -339,10 +343,10 @@ function Index() {
                 />
               </div>
               <button
-                className="bg-blue-900 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300 md:inline-block md:w-auto w-full"
+                className="bg-[#4733C9] text-white px-8 py-3 rounded-full hover:bg-[#624DE7] transition duration-300 md:inline-block md:w-auto w-full"
                 type="submit"
               >
-                SEND
+                Let&apos;s Do it!
               </button>
             </form>
           </div>

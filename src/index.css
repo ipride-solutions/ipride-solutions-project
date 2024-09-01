@@ -16,3 +16,6 @@
 * {
   scroll-behavior: smooth;
 }
+#Form {
+  background: url("../src/assets/BG.svg");
+}

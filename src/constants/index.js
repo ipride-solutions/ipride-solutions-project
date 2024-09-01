@@ -40,3 +40,11 @@ export const dropdown = [
 			"Our 24/7 Support team is always available to ensure your operations run smoothly without interruptions.",
 	},
 ];
+
+export const contact = [
+	{ data: "+91-9561322211", icon: "faPhoneAlt" },
+	{ data: "contact@i-pride.in", icon: "faEnvelope" },
+	{ data: "Roseland Residency, H102, Pune 411027", icon: "faMapMarkerAlt" },
+];
+
+export const pages = ["Home","About","Services","Contact"]

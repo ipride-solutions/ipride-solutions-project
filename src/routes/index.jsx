@@ -11,6 +11,7 @@ import {
   Whyus2,
 } from "../utils";
 import Navbar from "../components/Navbar";
+import Footer from "../components/footer";
 import { dropdown, services } from "../constants";
 import { useState } from "react";
 import gsap from "gsap";
@@ -46,144 +47,144 @@ function Index() {
   };
 
   return (
-    <main className="w-screen">
-      <section className="w-screen h-screen ">
-        <div className="w-full -z-10 h-full absolute md:hidden">
-          <img src={BgSectionHomeMob} className="w-full h-full   " />
-        </div>
-        <div className="w-full -z-10 h-full absolute hidden md:block">
-          <img src={BgSectionHomeDesk} className="w-full h-full object-cover" />
-        </div>
-        <Navbar />
-        <div className="w-screen h-2/3 sm:h-3/4 flex justify-center sm:justify-center ">
-          <div className="w-5/6 sm:w-full sm:pl-10 gap-2 h-full  flex sm:justify-between ">
-            <div className="w-full md:w-1/2   h-full   font-bold text-[3.4rem] sm:text-[4rem]    text-white">
-              <div className="">
-                High quality <br /> IT-Solutions to help your problems about
-                technology
-              </div>
-              <div className="hidden md:flex text-lg font-normal w-full h-1/4 text-justify ">
-                We provide expert advice and support for all your IT needs,
-                ensuring that your technology works seamlessly and efficiently.
-                Whether you&apos;re facing technical challenges or looking to
-                optimize your IT infrastructure, our high-quality solutions are
-                tailored to meet your specific requirements.
-              </div>
-            </div>
-            <div className="hidden md:flex w-1/6 flex-col justify-evenly  h-full">
-              <a className="w-full" href="">
-                <img
-                  src={HeroSectionRating}
-                  className="w-full  pointer-events-none object-contain"
-                />
-              </a>
-              <a href="/" className="w-full">
-                <img
-                  src={HeroSectionVideoWatch}
-                  className="w-full hover:scale-105 transition-all   object-contain"
-                />
-              </a>
+		<main className="w-screen">
+			<section className="w-screen h-screen ">
+				<div className="w-full -z-10 h-full absolute md:hidden">
+					<img src={BgSectionHomeMob} className="w-full h-full   " />
+				</div>
+				<div className="w-full -z-10 h-full absolute hidden md:block">
+					<img src={BgSectionHomeDesk} className="w-full h-full object-cover" />
+				</div>
+				<Navbar />
+				<div className="w-screen h-2/3 sm:h-3/4 flex justify-center sm:justify-center ">
+					<div className="w-5/6 sm:w-full sm:pl-10 gap-2 h-full  flex sm:justify-between ">
+						<div className="w-full md:w-1/2   h-full   font-bold text-[3.4rem] sm:text-[4rem]    text-white">
+							<div className="">
+								High quality <br /> IT-Solutions to help your problems about
+								technology
+							</div>
+							<div className="hidden md:flex text-lg font-normal w-full h-1/4 text-justify ">
+								We provide expert advice and support for all your IT needs,
+								ensuring that your technology works seamlessly and efficiently.
+								Whether you&apos;re facing technical challenges or looking to
+								optimize your IT infrastructure, our high-quality solutions are
+								tailored to meet your specific requirements.
+							</div>
+						</div>
+						<div className="hidden md:flex w-1/6 flex-col justify-evenly  h-full">
+							<a className="w-full" href="">
+								<img
+									src={HeroSectionRating}
+									className="w-full  pointer-events-none object-contain"
+								/>
+							</a>
+							<a href="/" className="w-full">
+								<img
+									src={HeroSectionVideoWatch}
+									className="w-full hover:scale-105 transition-all   object-contain"
+								/>
+							</a>
 
-              <img
-                src={ArrowImg}
-                className="w-full pointer-events-none  object-contain"
-              />
-            </div>
-            <div className="w-full sm:w-1/3 hidden  justify-end  md:flex h-full ">
-              <img
-                src={HeroSectionImg}
-                className="w-full h-full object-contain"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="w-screen flex justify-center   h-1/6  ">
-          <div className="w-5/6  ">
-            <div className="bg-white w-60 h-16 rounded-full flex  justify-evenly items-center">
-              <div className="h-full flex justify-center Headline font-bold items-center">
-                Let&apos;s do it
-              </div>
-              <div className="h-full flex justify-center items-center ">
-                <div className="group relative flex justify-center items-center text-zinc-600 text-sm font-bold">
-                  <div className="absolute opacity-0 group-hover:opacity-100 group-hover:-translate-y-[150%] -translate-y-[300%] duration-500 group-hover:delay-500 skew-y-[20deg] group-hover:skew-y-0 shadow-md">
-                    <div className="bg-blue-200 flex items-center gap-1 p-2 rounded-md">
-                      <svg
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        height="20px"
-                        width="20px"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="stroke-zinc-600"
-                      >
-                        <circle
-                          strokeLinejoin="round"
-                          r="9"
-                          cy="12"
-                          cx="12"
-                        ></circle>
-                        <path
-                          strokeLinejoin="round"
-                          d="M12 3C12 3 8.5 6 8.5 12C8.5 18 12 21 12 21"
-                        ></path>
-                        <path
-                          strokeLinejoin="round"
-                          d="M12 3C12 3 15.5 6 15.5 12C15.5 18 12 21 12 21"
-                        ></path>
-                        <path strokeLinejoin="round" d="M3 12H21"></path>
-                        <path strokeLinejoin="round" d="M19.5 7.5H4.5"></path>
-                        <g filter="url(#filter0_d_15_556)">
-                          <path
-                            strokeLinejoin="round"
-                            d="M19.5 16.5H4.5"
-                          ></path>
-                        </g>
-                        <defs>
-                          <filter
-                            color-interpolation-filters="sRGB"
-                            filterUnits="userSpaceOnUse"
-                            height="3"
-                            width="17"
-                            y="16"
-                            x="3.5"
-                            id="filter0_d_15_556"
-                          >
-                            <feFlood
-                              result="BackgroundImageFix"
-                              floodOpacity="0"
-                            ></feFlood>
-                            <feColorMatrix
-                              result="hardAlpha"
-                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                              type="matrix"
-                              in="SourceAlpha"
-                            ></feColorMatrix>
-                            <feOffset dy="1"></feOffset>
-                            <feGaussianBlur stdDeviation="0.5"></feGaussianBlur>
-                            <feColorMatrix
-                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-                              type="matrix"
-                            ></feColorMatrix>
-                            <feBlend
-                              result="effect1_dropShadow_15_556"
-                              in2="BackgroundImageFix"
-                              mode="normal"
-                            ></feBlend>
-                            <feBlend
-                              result="shape"
-                              in2="effect1_dropShadow_15_556"
-                              in="SourceGraphic"
-                              mode="normal"
-                            ></feBlend>
-                          </filter>
-                        </defs>
-                      </svg>
-                      <span>I-PRIDE</span>
-                    </div>
-                    <div className="shadow-md bg-blue-200 absolute bottom-0 translate-y-1/2 left-1/2 translate-x-full rotate-45 p-1"></div>
-                    <div className="rounded-md bg-white group-hover:opacity-0 group-hover:scale-[115%] group-hover:delay-700 duration-500 w-full h-full absolute top-0 left-0">
-                      <div className="border-b border-r border-white bg-white absolute bottom-0 translate-y-1/2 left-1/2 translate-x-full rotate-45 p-1"></div>
-                    </div>
-                  </div>
+							<img
+								src={ArrowImg}
+								className="w-full pointer-events-none  object-contain"
+							/>
+						</div>
+						<div className="w-full sm:w-1/3 hidden  justify-end  md:flex h-full ">
+							<img
+								src={HeroSectionImg}
+								className="w-full h-full object-contain"
+							/>
+						</div>
+					</div>
+				</div>
+				<div className="w-screen flex justify-center   h-1/6  ">
+					<div className="w-5/6  ">
+						<div className="bg-white w-60 h-16 rounded-full flex  justify-evenly items-center">
+							<div className="h-full flex justify-center Headline font-bold items-center">
+								Let&apos;s do it
+							</div>
+							<div className="h-full flex justify-center items-center ">
+								<div className="group relative flex justify-center items-center text-zinc-600 text-sm font-bold">
+									<div className="absolute opacity-0 group-hover:opacity-100 group-hover:-translate-y-[150%] -translate-y-[300%] duration-500 group-hover:delay-500 skew-y-[20deg] group-hover:skew-y-0 shadow-md">
+										<div className="bg-blue-200 flex items-center gap-1 p-2 rounded-md">
+											<svg
+												fill="none"
+												viewBox="0 0 24 24"
+												height="20px"
+												width="20px"
+												xmlns="http://www.w3.org/2000/svg"
+												className="stroke-zinc-600"
+											>
+												<circle
+													strokeLinejoin="round"
+													r="9"
+													cy="12"
+													cx="12"
+												></circle>
+												<path
+													strokeLinejoin="round"
+													d="M12 3C12 3 8.5 6 8.5 12C8.5 18 12 21 12 21"
+												></path>
+												<path
+													strokeLinejoin="round"
+													d="M12 3C12 3 15.5 6 15.5 12C15.5 18 12 21 12 21"
+												></path>
+												<path strokeLinejoin="round" d="M3 12H21"></path>
+												<path strokeLinejoin="round" d="M19.5 7.5H4.5"></path>
+												<g filter="url(#filter0_d_15_556)">
+													<path
+														strokeLinejoin="round"
+														d="M19.5 16.5H4.5"
+													></path>
+												</g>
+												<defs>
+													<filter
+														color-interpolation-filters="sRGB"
+														filterUnits="userSpaceOnUse"
+														height="3"
+														width="17"
+														y="16"
+														x="3.5"
+														id="filter0_d_15_556"
+													>
+														<feFlood
+															result="BackgroundImageFix"
+															floodOpacity="0"
+														></feFlood>
+														<feColorMatrix
+															result="hardAlpha"
+															values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+															type="matrix"
+															in="SourceAlpha"
+														></feColorMatrix>
+														<feOffset dy="1"></feOffset>
+														<feGaussianBlur stdDeviation="0.5"></feGaussianBlur>
+														<feColorMatrix
+															values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+															type="matrix"
+														></feColorMatrix>
+														<feBlend
+															result="effect1_dropShadow_15_556"
+															in2="BackgroundImageFix"
+															mode="normal"
+														></feBlend>
+														<feBlend
+															result="shape"
+															in2="effect1_dropShadow_15_556"
+															in="SourceGraphic"
+															mode="normal"
+														></feBlend>
+													</filter>
+												</defs>
+											</svg>
+											<span>I-PRIDE</span>
+										</div>
+										<div className="shadow-md bg-blue-200 absolute bottom-0 translate-y-1/2 left-1/2 translate-x-full rotate-45 p-1"></div>
+										<div className="rounded-md bg-white group-hover:opacity-0 group-hover:scale-[115%] group-hover:delay-700 duration-500 w-full h-full absolute top-0 left-0">
+											<div className="border-b border-r border-white bg-white absolute bottom-0 translate-y-1/2 left-1/2 translate-x-full rotate-45 p-1"></div>
+										</div>
+									</div>
 
 									<div className="shadow-md flex items-center group-hover:gap-2 bg-gradient-to-br from-blue-200 to-purple-200 p-3 rounded-full cursor-pointer duration-300">
 										<svg
@@ -211,12 +212,12 @@ function Index() {
 				</div>
 			</section>
 			{/* Second Section */}
-			<section className="w-screen mb-8 px-4">
-				<div className="flex flex-col mb-5">
-					<h1 className="flex justify-center items-center text-lg text-[#624DE7] font-semibold my-2">
+			<section className="w-screen my-8 px-4 md:px-40">
+				<div className="flex flex-col mb-5 2xl:mb-8 space-y-5">
+					<h1 className="flex justify-center items-center 2xl:text-4xl text-xl text-[#624DE7] font-semibold my-2">
 						Services
 					</h1>
-					<h5 className="flex justify-center items-center text-center font-extrabold text-2xl md:text-4xl px-5">
+					<h5 className="flex justify-center items-center text-center font-extrabold 2xl:text-6xl text-2xl md:text-4xl px-5 ">
 						We provide All-in-one Solution for every IT job
 					</h5>
 				</div>
@@ -224,43 +225,45 @@ function Index() {
 					{services.map((el, idx) => (
 						<div
 							key={idx}
-							className="w-full sm:w-[48%] lg:w-[22%] h-[45vh] flex flex-col items-center justify-between border-t-4 border-[#624DE7] shadow-md shadow-gray-200 p-5 md:p-10 rounded-md rounded-br-[50px] mb-5"
+							className="w-full sm:w-[48%] xl:w-[22%] 2xl:h-[30vh] h-[45vh] flex flex-col items-center justify-between border-t-4 border-[#624DE7] shadow-md shadow-gray-200 p-5 md:p-10 rounded-md rounded-br-[50px] mb-5"
 						>
 							<div className="flex flex-col">
-								<h1 className="text-3xl font-bold text-[#624DE7] mb-2">
+								<h1 className="text-3xl 2xl:text-5xl font-bold text-[#624DE7] ">
 									{el.cardTitle}
 								</h1>
-								<p className="text-lg md:text-base text-gray-700 font-normal">
+								<p className="text-lg 2xl:text-2xl mt-3 md:text-base text-gray-700 font-normal">
 									{el.cardDescription}
 								</p>
 							</div>
-							<div className="text-2xl md:text-xl font-bold">Learn More</div>
+							<div className="text-2xl 2xl:text-5xl md:text-xl font-bold">
+								Learn More
+							</div>
 						</div>
 					))}
 				</div>
 			</section>
 
 			{/* Why Us Section */}
-			<section className="w-screen px-5 md:flex">
-				<div className="w-full md:w-[45vw] mr-8">
-					<div className="flex flex-col">
-						<h1 className="flex justify-center items-center text-lg text-[#624DE7] font-semibold mb-2">
+			<section className="w-screen px-5 md:flex mb-14 md:px-40 2xl:px-56 2xl:mt-20">
+				<div className="w-full xl:w-[45vw]  xl:px-16">
+					<div className="flex flex-col 2xl:space-y-7 mb-5">
+						<h1 className="flex justify-center items-center 2xl:text-4xl text-xl text-[#624DE7] font-semibold mb-2">
 							Why Us
 						</h1>
-						<h5 className="flex justify-center items-center text-center font-bold text-2xl md:text-3xl mb-2">
+						<h5 className="flex justify-center items-center text-center font-bold text-2xl 2xl:text-6xl md:text-3xl mb-2">
 							We have over 9+ Years in the Tech Industry
 						</h5>
-						<p className="text-sm md:text-md text-gray-700 px-3 md:px-7 font-normal">
+						<p className="text-lg md:text-md 2xl:text-3xl text-gray-700 px-3 md:px-7 font-normal">
 							We are committed to delivering exceptional technology solutions
 							with a focus on innovation, quality, and customer satisfaction.
 						</p>
 					</div>
-					<div className="px-5 md:px-12 mt-3">
+					<div className="px-5 md:px-12 mt-3 2xl:space-y-7">
 						{dropdown.map((el, idx) => (
-							<div key={idx} className="mb-2">
+							<div key={idx} className="mb-2 ">
 								<h1
 									onClick={() => handleToggle(idx)}
-									className="text-lg font-bold cursor-pointer flex items-center"
+									className="text-lg 2xl:text-3xl font-bold cursor-pointer flex items-center "
 								>
 									<FontAwesomeIcon
 										icon={faXmark}
@@ -271,19 +274,18 @@ function Index() {
 									&nbsp; {el.title}
 								</h1>
 								{activeIndex === idx && (
-									<div className="p-2 description rounded-md">
+									<div className="p-2 description rounded-md 2xl:text-3xl">
 										{el.description}
 									</div>
 								)}
 							</div>
 						))}
 					</div>
-			  </div>
-			  <div className="md:flex gap-2 w-[45vw] hidden justify-center items-center flex-nowrap">
-				  <img src={Whyus1} alt="whyus1" />
-				  <img src={Whyus2} alt="whyus2" />
-			  </div>
-
+				</div>
+				<div className="xl:flex gap-2 w-[45vw] hidden justify-center items-center flex-nowrap">
+					<img src={Whyus1} alt="whyus1" />
+					<img src={Whyus2} alt="whyus2" />
+				</div>
 			</section>
 		</main>
 	);

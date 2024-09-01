@@ -285,6 +285,68 @@ function Index() {
 			  </div>
 
 			</section>
+
+      <section className="bg-blue-900 text-white pt-16">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6 md:px-0">
+          <div className="bg-stone-100 text-gray-900 p-8 md:rounded-b-none rounded-md shadow-lg w-full md:w-1/2 mb-8 md:mb-0">
+            <h2 className="text-2xl font-bold mb-3">Contact us</h2>
+            <p className="mb-9">Contact us today to explore how we can help you achieve your goals.</p>
+            <form>
+              <div className="mb-4">
+                <input
+                  type="text"
+                  placeholder="Your name"
+                  className="w-full py-3 px-6 border border-gray-300 rounded-full focus:outline-none focus:border-blue-500"
+                />
+              </div>
+              <div className="mb-4">
+                <input
+                  type="text"
+                  placeholder="Phone number"
+                  className="w-full py-3 px-6 border border-gray-300 rounded-full focus:outline-none focus:border-blue-500"
+                />
+              </div>
+              <div className="mb-6">
+                <input
+                  type="text"
+                  placeholder="Project category"
+                  className="w-full py-3 px-6 border border-gray-300 rounded-full focus:outline-none focus:border-blue-500"
+                />
+              </div>
+              <button
+                type="submit"
+                className="bg-blue-900 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300 md:inline-block md:w-auto w-full"
+              >
+                SEND
+              </button>
+            </form>
+          </div>
+
+          <div className="w-full md:w-1/2 text-center md:text-left pb-16 md:pl-[50px] pt-10 md:pt-0">
+            <h2 className="text-2xl font-bold mb-4">OUR SUCCESS</h2>
+            <h3 className="text-3xl font-bold mb-4">We have helped more than 700+ clients worldwide</h3>
+            <p className="mb-8">Our proven strategies have consistently delivered results. We take pride in our commitment to customer satisfaction.</p>
+            <div className="grid grid-cols-2 gap-6">
+              <div>
+                <div className="text-4xl font-bold text-yellow-400 mb-2">90%</div>
+                <p>Client satisfaction rating.</p>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-yellow-400 mb-2">85%</div>
+                <p>Client satisfaction rating.</p>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-yellow-400 mb-2">75%</div>
+                <p>Client satisfaction rating.</p>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-yellow-400 mb-2">90%</div>
+                <p>Client satisfaction rating.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 		</main>
 	);
 }

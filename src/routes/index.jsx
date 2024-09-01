@@ -299,8 +299,8 @@ function Index() {
 			</section>
 
       <section className="bg-blue-900 text-white pt-16">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6 md:px-0">
-          <div className="bg-stone-100 text-gray-900 p-8 md:rounded-b-none rounded-md shadow-lg w-full md:w-1/2 mb-8 md:mb-0">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6 md:px-0 h-full">
+          <div className="bg-stone-100 text-gray-900 p-8 lg:rounded-b-none rounded-md shadow-lg w-full md:w-1/2 mb-8 md:mb-0">
             <h2 className="text-2xl font-bold mb-3">Contact us</h2>
             <p className="mb-9">Contact us today to explore how we can help you achieve your goals.</p>
             <form ref={contactForm} onSubmit={handleContactFormSubmit}>
@@ -334,7 +334,7 @@ function Index() {
             </form>
           </div>
 
-          <div className="w-full md:w-1/2 text-center md:text-left pb-16 md:pl-[50px] pt-10 md:pt-0">
+          <div className="w-full md:w-1/2 text-center md:text-left pb-25 md:pl-[50px] pt-10 md:pt-0">
             <h2 className="text-2xl font-bold mb-4">OUR SUCCESS</h2>
             <h3 className="text-3xl font-bold mb-4">We have helped more than 700+ clients worldwide</h3>
             <p className="mb-8">Our proven strategies have consistently delivered results. We take pride in our commitment to customer satisfaction.</p>

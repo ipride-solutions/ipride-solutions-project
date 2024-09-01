@@ -13,3 +13,6 @@
 .Headline {
   font-family: "HeadLine";
 }
+* {
+  scroll-behavior: smooth;
+}

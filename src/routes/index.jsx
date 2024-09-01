@@ -60,7 +60,7 @@ function Index() {
 
   return (
     <main className="w-screen">
-      <section className="w-screen h-screen ">
+      <section id="Home" className="w-screen h-screen ">
         <div className="w-full -z-10 h-full absolute md:hidden">
           <img src={BgSectionHomeMob} className="w-full h-full   " />
         </div>
@@ -198,105 +198,104 @@ function Index() {
                     </div>
                   </div>
 
-									<div className="shadow-md flex items-center group-hover:gap-2 bg-gradient-to-br from-blue-200 to-purple-200 p-3 rounded-full cursor-pointer duration-300">
-										<svg
-											fill="none"
-											viewBox="0 0 24 24"
-											height="20px"
-											width="20px"
-											xmlns="http://www.w3.org/2000/svg"
-											className="fill-zinc-600"
-										>
-											<path
-												strokeLinejoin="round"
-												strokeLinecap="round"
-												d="M15.4306 7.70172C7.55045 7.99826 3.43929 15.232 2.17021 19.3956C2.07701 19.7014 2.31139 20 2.63107 20C2.82491 20 3.0008 19.8828 3.08334 19.7074C6.04179 13.4211 12.7066 12.3152 15.514 12.5639C15.7583 12.5856 15.9333 12.7956 15.9333 13.0409V15.1247C15.9333 15.5667 16.4648 15.7913 16.7818 15.4833L20.6976 11.6784C20.8723 11.5087 20.8993 11.2378 20.7615 11.037L16.8456 5.32965C16.5677 4.92457 15.9333 5.12126 15.9333 5.61253V7.19231C15.9333 7.46845 15.7065 7.69133 15.4306 7.70172Z"
-											></path>
-										</svg>
-										<span className="text-[0px] group-hover:text-sm duration-300">
-											Contact us
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			{/* Second Section */}
-			<section className="w-screen mb-8 px-4">
-				<div className="flex flex-col mb-5">
-					<h1 className="flex justify-center items-center text-lg text-[#624DE7] font-semibold my-2">
-						Services
-					</h1>
-					<h5 className="flex justify-center items-center text-center font-extrabold text-2xl md:text-4xl px-5">
-						We provide All-in-one Solution for every IT job
-					</h5>
-				</div>
-				<div className="cards flex flex-col sm:flex-row flex-wrap gap-5 items-center justify-center">
-					{services.map((el, idx) => (
-						<div
-							key={idx}
-							className="w-full sm:w-[48%] lg:w-[22%] h-[45vh] flex flex-col items-center justify-between border-t-4 border-[#624DE7] shadow-md shadow-gray-200 p-5 md:p-10 rounded-md rounded-br-[50px] mb-5"
-						>
-							<div className="flex flex-col">
-								<h1 className="text-3xl font-bold text-[#624DE7] mb-2">
-									{el.cardTitle}
-								</h1>
-								<p className="text-lg md:text-base text-gray-700 font-normal">
-									{el.cardDescription}
-								</p>
-							</div>
-							<div className="text-2xl md:text-xl font-bold">Learn More</div>
-						</div>
-					))}
-				</div>
-			</section>
+                  <div className="shadow-md flex items-center group-hover:gap-2 bg-gradient-to-br from-blue-200 to-purple-200 p-3 rounded-full cursor-pointer duration-300">
+                    <svg
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      height="20px"
+                      width="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="fill-zinc-600"
+                    >
+                      <path
+                        strokeLinejoin="round"
+                        strokeLinecap="round"
+                        d="M15.4306 7.70172C7.55045 7.99826 3.43929 15.232 2.17021 19.3956C2.07701 19.7014 2.31139 20 2.63107 20C2.82491 20 3.0008 19.8828 3.08334 19.7074C6.04179 13.4211 12.7066 12.3152 15.514 12.5639C15.7583 12.5856 15.9333 12.7956 15.9333 13.0409V15.1247C15.9333 15.5667 16.4648 15.7913 16.7818 15.4833L20.6976 11.6784C20.8723 11.5087 20.8993 11.2378 20.7615 11.037L16.8456 5.32965C16.5677 4.92457 15.9333 5.12126 15.9333 5.61253V7.19231C15.9333 7.46845 15.7065 7.69133 15.4306 7.70172Z"
+                      ></path>
+                    </svg>
+                    <span className="text-[0px] group-hover:text-sm duration-300">
+                      Contact us
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Second Section */}
+      <section className="w-screen mb-8 px-4" id="Services">
+        <div className="flex flex-col mb-5">
+          <h1 className="flex justify-center items-center text-lg text-[#624DE7] font-semibold my-2">
+            Services
+          </h1>
+          <h5 className="flex justify-center items-center text-center font-extrabold text-2xl md:text-4xl px-5">
+            We provide All-in-one Solution for every IT job
+          </h5>
+        </div>
+        <div className="cards flex flex-col sm:flex-row flex-wrap gap-5 items-center justify-center">
+          {services.map((el, idx) => (
+            <div
+              key={idx}
+              className="w-full sm:w-[48%] lg:w-[22%] h-[45vh] flex flex-col items-center justify-between border-t-4 border-[#624DE7] shadow-md shadow-gray-200 p-5 md:p-10 rounded-md rounded-br-[50px] mb-5"
+            >
+              <div className="flex flex-col">
+                <h1 className="text-3xl font-bold text-[#624DE7] mb-2">
+                  {el.cardTitle}
+                </h1>
+                <p className="text-lg md:text-base text-gray-700 font-normal">
+                  {el.cardDescription}
+                </p>
+              </div>
+              <div className="text-2xl md:text-xl font-bold">Learn More</div>
+            </div>
+          ))}
+        </div>
+      </section>
 
 			{/* Why Us Section */}
-			<section className="w-screen px-5 md:flex">
-				<div className="w-full md:w-[45vw] mr-8">
-					<div className="flex flex-col">
-						<h1 className="flex justify-center items-center text-lg text-[#624DE7] font-semibold mb-2">
-							Why Us
-						</h1>
-						<h5 className="flex justify-center items-center text-center font-bold text-2xl md:text-3xl mb-2">
-							We have over 9+ Years in the Tech Industry
-						</h5>
-						<p className="text-sm md:text-md text-gray-700 px-3 md:px-7 font-normal">
-							We are committed to delivering exceptional technology solutions
-							with a focus on innovation, quality, and customer satisfaction.
-						</p>
-					</div>
-					<div className="px-5 md:px-12 mt-3">
-						{dropdown.map((el, idx) => (
-							<div key={idx} className="mb-2">
-								<h1
-									onClick={() => handleToggle(idx)}
-									className="text-lg font-bold cursor-pointer flex items-center"
-								>
-									<FontAwesomeIcon
-										icon={faXmark}
-										className={`text-[#624DE7] font-bold transition-all duration-200 ${
-											activeIndex === idx ? "" : "rotate-45"
-										}`}
-									/>
-									&nbsp; {el.title}
-								</h1>
-								{activeIndex === idx && (
-									<div className="p-2 description rounded-md">
-										{el.description}
-									</div>
-								)}
-							</div>
-						))}
-					</div>
-			  </div>
-			  <div className="md:flex gap-2 w-[45vw] hidden justify-center items-center flex-nowrap">
-				  <img src={Whyus1} alt="whyus1" />
-				  <img src={Whyus2} alt="whyus2" />
-			  </div>
-
+      <section className="w-screen px-5 md:flex">
+        <div className="w-full md:w-[45vw] mr-8">
+          <div className="flex flex-col">
+            <h1 className="flex justify-center items-center text-lg text-[#624DE7] font-semibold mb-2">
+              Why Us
+            </h1>
+            <h5 className="flex justify-center items-center text-center font-bold text-2xl md:text-3xl mb-2">
+              We have over 9+ Years in the Tech Industry
+            </h5>
+            <p className="text-sm md:text-md text-gray-700 px-3 md:px-7 font-normal">
+              We are committed to delivering exceptional technology solutions
+              with a focus on innovation, quality, and customer satisfaction.
+            </p>
+          </div>
+          <div className="px-5 md:px-12 mt-3">
+            {dropdown.map((el, idx) => (
+              <div key={idx} className="mb-2">
+                <h1
+                  onClick={() => handleToggle(idx)}
+                  className="text-lg font-bold cursor-pointer flex items-center"
+                >
+                  <FontAwesomeIcon
+                    icon={faXmark}
+                    className={`text-[#624DE7] font-bold transition-all duration-200 ${
+                      activeIndex === idx ? "" : "rotate-45"
+                    }`}
+                  />
+                  &nbsp; {el.title}
+                </h1>
+                {activeIndex === idx && (
+                  <div className="p-2 description rounded-md">
+                    {el.description}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="md:flex gap-2 w-[45vw] hidden justify-center items-center flex-nowrap">
+          <img src={Whyus1} alt="whyus1" />
+          <img src={Whyus2} alt="whyus2" />
+        </div>
 			</section>
 
       <section className="bg-blue-900 text-white pt-16">

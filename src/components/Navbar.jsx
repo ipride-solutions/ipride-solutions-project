@@ -40,16 +40,28 @@ const Navbar = () => {
     }
   };
   return (
-    <nav className="w-screen h-[10vh] HeadLine text-white flex justify-center items-center  ">
+    <nav className="w-screen h-[10vh] Headline text-white flex justify-center items-center  ">
       <div className="h-full w-5/6 flex items-center justify-between  ">
-        <div id="logo" className="h-full flex  items-center">
+        <div id="logo" className="h-full flex   items-center">
           <img src={ComLogo} className="" />
+        </div>
+        <div className="hidden  md:flex">
+          <ul className="flex gap-5">
+            {navlists.map((item, index) => (
+              <li
+                className="hover:border-b-2 cursor-pointer hover:scale-105  transition-all duration-75"
+                key={index}
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
         <div id="menu" className="h-full flex  items-center">
           <img
             src={clicked}
             onClick={handleClick}
-            className="hover:scale-105 z-40 sm:hidden cursor-pointer h-1/2 transition-all duration-300"
+            className="hover:scale-105 z-40 md:hidden cursor-pointer h-1/2 transition-all duration-300"
           />
         </div>
       </div>

@@ -1,9 +1,9 @@
-import React from "react";
+// import React from "react";
 import { ComLogo, menuClosed, menuOpen } from "../utils";
 import gsap from "gsap";
 import { useState } from "react";
 import { navlists } from "../constants";
-import { Link } from "@tanstack/react-router";
+// import { Link } from "@tanstack/react-router";
 
 const Navbar = () => {
   const [clicked, setclicked] = useState(menuClosed);
@@ -47,13 +47,12 @@ const Navbar = () => {
         </div>
         <div className="hidden  md:flex">
           <ul className="flex gap-5">
-            {navlists.map((item, index) => (
-              <li
-                className="hover:border-b-2 cursor-pointer hover:scale-105  transition-all duration-75"
-                key={index}
-              >
-                {item}
-              </li>
+            {navlists.map((itemO, index) => (
+              <a key={index} href={itemO.link}>
+                <li className="hover:border-b-2 cursor-pointer hover:scale-105  transition-all duration-75">
+                  {itemO.item}
+                </li>
+              </a>
             ))}
           </ul>
         </div>
@@ -69,13 +68,12 @@ const Navbar = () => {
         className={` fixed menuSec top-16 right-0   ${display} bg-white bg-opacity-60 backdrop-blur-md  border z-10 w-1/3 m-2 rounded-2xl h-52 sm:hidden  `}
       >
         <ul className="text-black Headline p-5 flex flex-col gap-4 text-lg">
-          {navlists.map((item, index) => (
-            <li
-              key={index}
-              className="hover:border-b-2 cursor-pointer border-[#4733C9] hover:text-[#4733C9] transition-all duration-75 "
-            >
-              {item}
-            </li>
+          {navlists.map((itemO, index) => (
+            <a key={index} href={itemO.link}>
+              <li className="hover:border-b-2 cursor-pointer border-[#4733C9] hover:text-[#4733C9] transition-all duration-75 ">
+                {itemO.item}
+              </li>
+            </a>
           ))}
         </ul>
       </div>

@@ -13,3 +13,9 @@
 .Headline {
   font-family: "HeadLine";
 }
+* {
+  scroll-behavior: smooth;
+}
+#Form {
+  background: url("../src/assets/BG.svg");
+}

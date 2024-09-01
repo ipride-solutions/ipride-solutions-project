@@ -307,7 +307,7 @@ function Index() {
       </section>
 
       <section className="bg-blue-900 text-white pt-16">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6 md:px-0 h-full">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6 md:px-10  h-full">
           <div className="bg-stone-100 text-gray-900 p-8 lg:rounded-b-none rounded-md shadow-lg w-full md:w-1/2 mb-8 md:mb-0">
             <h2 className="text-2xl font-bold mb-3">Contact us</h2>
             <p className="mb-9">

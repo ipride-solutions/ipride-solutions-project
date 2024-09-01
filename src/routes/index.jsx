@@ -59,10 +59,12 @@ function Index() {
         }
       )
       .then(() => {
-        console.log("SUCCESS!");
+        // console.log("SUCCESS!");
+        alert("Sent Successfully");
       })
       .catch((error) => {
-        console.log("FAILED...", error.text);
+        console.log("FAILED...", error);
+        alert("Try again");
       });
   };
 

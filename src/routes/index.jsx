@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unknown-property */
+import emailjs from '@emailjs/browser';
 import { createFileRoute } from "@tanstack/react-router";
 import {
   ArrowImg,
@@ -12,7 +13,7 @@ import {
 } from "../utils";
 import Navbar from "../components/Navbar";
 import { dropdown, services } from "../constants";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -26,6 +27,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   const [activeIndex, setActiveIndex] = useState(null);
+  const contactForm = useRef();
 
   useGSAP(() => {
     if (activeIndex !== null) {
@@ -43,6 +45,17 @@ function Index() {
     } else {
       setActiveIndex(index);
     }
+  };
+
+  const handleContactFormSubmit = e => {
+    e.preventDefault();
+    emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, contactForm.current, {
+      publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+    }).then(() => {
+        console.log('SUCCESS!');
+    }).catch(error => {
+      console.log('FAILED...', error.text);
+    });
   };
 
   return (
@@ -291,7 +304,7 @@ function Index() {
           <div className="bg-stone-100 text-gray-900 p-8 md:rounded-b-none rounded-md shadow-lg w-full md:w-1/2 mb-8 md:mb-0">
             <h2 className="text-2xl font-bold mb-3">Contact us</h2>
             <p className="mb-9">Contact us today to explore how we can help you achieve your goals.</p>
-            <form>
+            <form ref={contactForm} onSubmit={handleContactFormSubmit}>
               <div className="mb-4">
                 <input
                   type="text"
@@ -314,8 +327,8 @@ function Index() {
                 />
               </div>
               <button
-                type="submit"
                 className="bg-blue-900 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300 md:inline-block md:w-auto w-full"
+                type="submit"
               >
                 SEND
               </button>

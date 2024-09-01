@@ -1,9 +1,9 @@
-import React from "react";
+// import React from "react";
 import { ComLogo, menuClosed, menuOpen } from "../utils";
 import gsap from "gsap";
 import { useState } from "react";
 import { navlists } from "../constants";
-import { Link } from "@tanstack/react-router";
+// import { Link } from "@tanstack/react-router";
 
 const Navbar = () => {
   const [clicked, setclicked] = useState(menuClosed);

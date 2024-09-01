@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unknown-property */
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import { createFileRoute } from "@tanstack/react-router";
 import {
   ArrowImg,
@@ -47,15 +47,23 @@ function Index() {
     }
   };
 
-  const handleContactFormSubmit = e => {
+  const handleContactFormSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, contactForm.current, {
-      publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-    }).then(() => {
-        console.log('SUCCESS!');
-    }).catch(error => {
-      console.log('FAILED...', error.text);
-    });
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        contactForm.current,
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        }
+      )
+      .then(() => {
+        console.log("SUCCESS!");
+      })
+      .catch((error) => {
+        console.log("FAILED...", error.text);
+      });
   };
 
   return (
@@ -253,7 +261,7 @@ function Index() {
         </div>
       </section>
 
-			{/* Why Us Section */}
+      {/* Why Us Section */}
       <section className="w-screen px-5 md:flex">
         <div className="w-full md:w-[45vw] mr-8">
           <div className="flex flex-col">
@@ -296,13 +304,16 @@ function Index() {
           <img src={Whyus1} alt="whyus1" />
           <img src={Whyus2} alt="whyus2" />
         </div>
-			</section>
+      </section>
 
       <section className="bg-blue-900 text-white pt-16">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6 md:px-0 h-full">
           <div className="bg-stone-100 text-gray-900 p-8 lg:rounded-b-none rounded-md shadow-lg w-full md:w-1/2 mb-8 md:mb-0">
             <h2 className="text-2xl font-bold mb-3">Contact us</h2>
-            <p className="mb-9">Contact us today to explore how we can help you achieve your goals.</p>
+            <p className="mb-9">
+              Contact us today to explore how we can help you achieve your
+              goals.
+            </p>
             <form ref={contactForm} onSubmit={handleContactFormSubmit}>
               <div className="mb-4">
                 <input
@@ -336,29 +347,42 @@ function Index() {
 
           <div className="w-full md:w-1/2 text-center md:text-left pb-25 md:pl-[50px] pt-10 md:pt-0">
             <h2 className="text-2xl font-bold mb-4">OUR SUCCESS</h2>
-            <h3 className="text-3xl font-bold mb-4">We have helped more than 700+ clients worldwide</h3>
-            <p className="mb-8">Our proven strategies have consistently delivered results. We take pride in our commitment to customer satisfaction.</p>
+            <h3 className="text-3xl font-bold mb-4">
+              We have helped more than 700+ clients worldwide
+            </h3>
+            <p className="mb-8">
+              Our proven strategies have consistently delivered results. We take
+              pride in our commitment to customer satisfaction.
+            </p>
             <div className="grid grid-cols-2 gap-6">
               <div>
-                <div className="text-4xl font-bold text-yellow-400 mb-2">90%</div>
+                <div className="text-4xl font-bold text-yellow-400 mb-2">
+                  90%
+                </div>
                 <p>Client satisfaction rating.</p>
               </div>
               <div>
-                <div className="text-4xl font-bold text-yellow-400 mb-2">85%</div>
+                <div className="text-4xl font-bold text-yellow-400 mb-2">
+                  85%
+                </div>
                 <p>Client satisfaction rating.</p>
               </div>
               <div>
-                <div className="text-4xl font-bold text-yellow-400 mb-2">75%</div>
+                <div className="text-4xl font-bold text-yellow-400 mb-2">
+                  75%
+                </div>
                 <p>Client satisfaction rating.</p>
               </div>
               <div>
-                <div className="text-4xl font-bold text-yellow-400 mb-2">90%</div>
+                <div className="text-4xl font-bold text-yellow-400 mb-2">
+                  90%
+                </div>
                 <p>Client satisfaction rating.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-		</main>
-	);
+    </main>
+  );
 }

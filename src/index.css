@@ -16,6 +16,14 @@
 * {
   scroll-behavior: smooth;
 }
-#Form {
+#Form,
+#timeline {
   background: url("../src/assets/BG.svg");
+}
+@font-face {
+  font-family: "Bayon";
+  src: url("./fonts/Bayon.ttf");
+}
+.Bay {
+  font-family: "Bayon";
 }

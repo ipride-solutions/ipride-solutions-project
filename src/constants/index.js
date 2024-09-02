@@ -2,7 +2,7 @@
 export const navlists = [
   {
     item: "Home",
-    link: "#Home",
+    link: "/",
   },
   {
     item: "About",
@@ -10,11 +10,11 @@ export const navlists = [
   },
   {
     item: "Services",
-    link: "#Services",
+    link: "/#Services",
   },
   {
     item: "Contact",
-    link: "#Contact",
+    link: "/#Contact",
   },
 ];
 
@@ -60,9 +60,9 @@ export const dropdown = [
 ];
 
 export const contact = [
-	{ data: "+91-9561322211", icon: "faPhoneAlt" },
-	{ data: "contact@i-pride.in", icon: "faEnvelope" },
-	{ data: "Roseland Residency, H102, Pune 411027", icon: "faMapMarkerAlt" },
+  { data: "+91-9561322211", icon: "faPhoneAlt" },
+  { data: "contact@i-pride.in", icon: "faEnvelope" },
+  { data: "Roseland Residency, H102, Pune 411027", icon: "faMapMarkerAlt" },
 ];
 
-export const pages = ["Home","About","Services","Contact"]
+export const pages = ["Home", "About", "Services", "Contact"];

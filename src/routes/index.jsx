@@ -321,10 +321,10 @@ function Index() {
 
       <section
         id="Form"
-        className=" bg-[#4733C9] w-screen  border border-black text-white pt-12 "
+        className=" bg-[#4733C9] w-screen text-white pt-12 "
       >
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6 md:px-10  h-full">
-          <div className="bg-stone-100 text-gray-900 p-8 lg:rounded-b-none rounded-md shadow-lg w-full md:w-1/2 mb-8 md:mb-0">
+          <div className="bg-stone-100 text-gray-900 p-8 lg:rounded-b-none rounded-md w-full md:w-1/2 mb-8 md:mb-0">
             <h2 className="text-2xl font-bold mb-3">Contact us</h2>
             <p className="mb-9">
               Contact us today to explore how we can help you achieve your
@@ -398,6 +398,7 @@ function Index() {
           </div>
         </div>
       </section>
+      
       <Footer />
     </main>
   );

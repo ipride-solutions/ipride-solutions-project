@@ -1,10 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import {
   BgSectionHomeDesk,
   BgSectionHomeMob,
   SectionBack,
-  SectionBack2,
+  // SectionBack2,
 } from "../utils";
 import Navbar from "../components/Navbar";
 

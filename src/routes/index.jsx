@@ -13,7 +13,7 @@ import {
   Whyus2,
 } from "../utils";
 import Navbar from "../components/Navbar";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import { dropdown, services } from "../constants";
 import { useRef, useState } from "react";
 import gsap from "gsap";

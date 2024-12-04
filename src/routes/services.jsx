@@ -15,10 +15,10 @@ import {
   designSolutionsPic,
   ITSolutionsPic,
   softwareSolutionsPic,
-  Whyus2,
+  // Whyus2,
 } from "../utils";
 import Navbar from "../components/Navbar";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 
 export const Route = createFileRoute("/services")({
   component: Services,

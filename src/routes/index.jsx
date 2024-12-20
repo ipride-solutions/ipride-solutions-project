@@ -51,22 +51,27 @@ function Index() {
 
   const handleContactFormSubmit = (e) => {
     e.preventDefault();
+
+    const { name, phone, message } = e.target.elements;
+
     emailjs
-      .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        contactForm.current,
+      .send(
+        "service_akhcu86",
+        "template_5r54yoc",
         {
-          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-        }
+          to_name: name.value,
+          from_name: "Contact Form",
+          message: message.value,
+          phone_number: phone.value,
+        },
+        "y7uU7gmAf52QF0pyj"
       )
       .then(() => {
-        // console.log("SUCCESS!");
-        alert("Sent Successfully");
+        alert("Your message has been sent successfully!");
       })
       .catch((error) => {
-        console.log("FAILED...", error);
-        alert("Try again");
+        alert("An error occurred. Please try again later.");
+        console.error("EmailJS error:", error);
       });
   };
 
@@ -329,6 +334,7 @@ function Index() {
             <form ref={contactForm} onSubmit={handleContactFormSubmit}>
               <div className="mb-4">
                 <input
+                  id="name"
                   type="text"
                   placeholder="Your name"
                   className="w-full py-3 px-6 border border-gray-300 rounded-full focus:outline-none focus:border-blue-500"
@@ -336,17 +342,21 @@ function Index() {
               </div>
               <div className="mb-4">
                 <input
+                  id="phone"
                   type="text"
                   placeholder="Phone number"
                   className="w-full py-3 px-6 border border-gray-300 rounded-full focus:outline-none focus:border-blue-500"
                 />
               </div>
               <div className="mb-6">
-                <input
-                  type="text"
-                  placeholder="Project category"
-                  className="w-full py-3 px-6 border border-gray-300 rounded-full focus:outline-none focus:border-blue-500"
-                />
+                <div className="mb-6">
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Your message"
+                    className="w-full py-3 px-6 border border-gray-300 rounded-full focus:outline-none focus:border-blue-500"
+                  ></textarea>
+                </div>
               </div>
               <button
                 className="bg-[#4733C9] text-white px-8 py-3 rounded-full hover:bg-[#624DE7] transition duration-300 md:inline-block md:w-auto w-full"

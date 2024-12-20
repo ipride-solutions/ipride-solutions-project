@@ -6,7 +6,7 @@ export const navlists = [
   },
   {
     item: "About",
-    link: "/About",
+    link: "/about",
   },
   {
     item: "Services",
